@@ -1,7 +1,7 @@
 #include "../include/Vector.h"
 #include <iostream>
 #include <iomanip>
-
+    
 int main() {
     // Create vectors
     Vector v1(1.0, 2.0, 3.0);

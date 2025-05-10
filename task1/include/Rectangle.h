@@ -9,7 +9,7 @@ private:
     double bottom;
     double right;
     double top;
-    
+
     // Normalize boundaries (make sure left < right and bottom < top)
     void normalize();
 
@@ -19,7 +19,7 @@ public:
     Rectangle(double left, double bottom, double right, double top);
     Rectangle(const Rectangle& other);
     ~Rectangle();
-    
+
     // Print method
     void print() const;
     

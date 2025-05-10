@@ -49,7 +49,7 @@ void Galon::setTotalVolume(double volume) {
 void Galon::setAlcoholVolume(double volume) {
     if (volume >= 0 && volume <= totalVolume) {
         alcoholVolume = volume;
-    }
+}
 }
 
 void Galon::setConcentration(double concentration) {
@@ -75,7 +75,7 @@ void Galon::removeLiquid(double volume) {
         // Calculate alcohol in the removed liquid (proportional to concentration)
         double currentConcentration = getConcentration() / 100.0;
         double removedAlcohol = volume * currentConcentration;
-        
+    
         // Update volumes
         totalVolume -= volume;
         alcoholVolume -= removedAlcohol;

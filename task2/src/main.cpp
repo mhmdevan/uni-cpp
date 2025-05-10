@@ -1,11 +1,10 @@
 #include <iostream>
-#include <string>
+#include <cstdlib>
 
-// Forward declarations of test functions
-int vectorTest();
+// Forward declarations for test functions
 int myStringTest();
-int rectangleTest();
-int galonTest();
+int complexTest();
+int clientTest();
 
 int main() {
     int choice = 0;
@@ -13,11 +12,10 @@ int main() {
     
     while (!exit) {
         // Display menu
-        std::cout << "\n==== C++ Class Implementation Tests ====\n";
-        std::cout << "1. Vector Class Test\n";
-        std::cout << "2. MyString Class Test\n";
-        std::cout << "3. Rectangle Class Test\n";
-        std::cout << "4. Galon Concentration Test\n";
+        std::cout << "\n==== C++ Object-Oriented Programming Tasks ====\n";
+        std::cout << "1. MyString Vector Test\n";
+        std::cout << "2. Complex Numbers Vector Test\n";
+        std::cout << "3. Client Management System Test\n";
         std::cout << "0. Exit\n";
         std::cout << "Enter your choice: ";
         std::cin >> choice;
@@ -28,26 +26,20 @@ int main() {
         switch (choice) {
             case 1:
                 system("clear"); // Clear console (for Unix/Mac)
-                std::cout << "\n---- Vector Class Test ----\n\n";
-                system("./build/VectorTest");
+                std::cout << "\n---- MyString Vector Test ----\n\n";
+                system("./build/MyStringTest");
                 break;
                 
             case 2:
                 system("clear");
-                std::cout << "\n---- MyString Class Test ----\n\n";
-                system("./build/MyStringTest");
+                std::cout << "\n---- Complex Numbers Vector Test ----\n\n";
+                system("./build/ComplexTest");
                 break;
                 
             case 3:
                 system("clear");
-                std::cout << "\n---- Rectangle Class Test ----\n\n";
-                system("./build/RectangleTest");
-                break;
-                
-            case 4:
-                system("clear");
-                std::cout << "\n---- Galon Concentration Test ----\n\n";
-                system("./build/GalonTest");
+                std::cout << "\n---- Client Management System Test ----\n\n";
+                system("./build/ClientTest");
                 break;
                 
             case 0:
@@ -62,4 +54,4 @@ int main() {
     }
     
     return 0;
-}
+} 

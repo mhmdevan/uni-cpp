@@ -54,11 +54,11 @@ Vector Vector::crossProduct(const Vector& other) const {
 double Vector::angleBetween(const Vector& other) const {
     double magProduct = magnitude() * other.magnitude();
     if (magProduct > 0) {
-        double cosTheta = dotProduct(other) / magProduct;
+    double cosTheta = dotProduct(other) / magProduct;
         // Clamp cosTheta to [-1, 1] to avoid numerical issues
         cosTheta = std::max(-1.0, std::min(1.0, cosTheta));
         return std::acos(cosTheta);
-    }
+}
     return 0.0;
 }
 
