@@ -3,12 +3,11 @@
 ### Object-Oriented Programming in C++
 
 **Group Members:**
-- Student Name 1
-- Student Name 2
-- Student Name 3
-- Student Name 4
+- Эсламния Мохаммад 
+- Бай Борис
+- Потеряев Родион
 
-**Submission Date:** May 2023
+**Submission Date:** May 2025
 
 ---
 
